@@ -1,0 +1,41 @@
+You are given a print() function that should output one statement as "GeeksForGeeks". The statement should be with double quotes as shown.
+
+Example 1: 
+
+Input:
+not any
+Output:
+"GeeksForGeeks"
+
+User Task:
+Your task is to print "GeeksForGeeks" with double quotes as shown. Don't print a new line.
+
+Solution:
+// { Driver Code Starts
+// Initial Template for C++
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+ // } Driver Code Ends
+// User function Template for C++
+
+void print() {
+
+    // code here
+    cout<<"\"GeeksForGeeks\"";
+}
+
+// { Driver Code Starts.
+
+int main() {
+
+    int t;
+    cin >> t;
+
+    while (t--) {
+        print();
+        cout << endl;
+    }
+}  // } Driver Code Ends
