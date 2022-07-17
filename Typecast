@@ -1,0 +1,53 @@
+Given a double value d, typecast it to an integer value.
+
+Example 1:
+
+Input:
+d = 10.23
+Output:
+10
+Explanation:
+The integer value of 10.23 is 10
+ 
+
+Your Task:
+
+You don't need to read input or print anything.Your task is to complete the function typeCast() which converts the double value to integer and returns an integer. 
+
+Solution
+
+// { Driver Code Starts
+//Initial Template for C
+
+#include <stdio.h>
+ 
+
+ // } Driver Code Ends
+//User function Template for C
+
+int typeCast(double d){
+    
+    //code here
+    d = (int)d;
+    
+}
+
+// { Driver Code Starts.
+
+int main()
+{
+   
+    int t;
+    scanf("%d", &t);
+    
+    while(t--){
+        double d;
+	    scanf("%lf", &d);
+	    
+	    int answer = typeCast(d);	    
+	    
+	    printf("%d\n", answer);
+    }
+    
+    return 0;
+}   // } Driver Code Ends
