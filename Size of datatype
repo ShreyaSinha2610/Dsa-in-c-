@@ -1,0 +1,87 @@
+Given a variable value  return the size of the variable. It can be of any data type like int, float, char, double, etc. 
+ 
+
+Example 1:
+
+Input:
+1(int)
+Output: 
+4
+Explanation: The size of int type value
+is 4
+Example 2:
+
+Input:
+a(char)
+Output: 
+1
+Explanation: The size of char type value
+is 1
+Your Task:
+
+Your task is to find the size of the variable value. Driver code will test the code by passing different queries. 
+
+Solution:
+// { Driver Code Starts
+//Initial Template for C++
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+template <typename T>
+
+ // } Driver Code Ends
+
+
+
+ // Refer Template in C++ track for more details 
+ // on template
+ int sizeOfValue(T value){
+ 
+     // You are given a variable value
+     // of unknown type.
+     // find the size of the value.
+     
+     // complete the code
+     
+     int ans =  sizeof(value)   ;
+     return ans;
+ }
+
+// { Driver Code Starts.
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int c;
+        cin>>c;
+        if(c==1)
+        {
+            double a;
+            cin>>a;
+            cout<<sizeOfValue<double>(a);
+            
+        }
+        else if(c==2)
+        {
+            int a;
+            cin>>a;
+            cout<<sizeOfValue<int>(a);
+            
+        }
+        else
+        {
+            char a;
+            cin>>a;
+            cout<<sizeOfValue<char>(a);
+    
+        }
+        cout<<endl;
+    }
+}
+
+  // } Driver Code Ends
