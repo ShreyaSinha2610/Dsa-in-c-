@@ -1,0 +1,56 @@
+You are given a function utility() which prints count  every time it is called. The function will be called by the driver's code n times.
+
+
+Example 1:
+
+Input: n = 4
+Output: 1 2 3 4
+
+Example 2:
+
+Input: n = 2
+Output: 1 2
+
+Your Task:
+Your task is to declare the variable count such that i is printed when the function is called for the ith call.
+
+Solution:
+// { Driver Code Starts
+// Initial Template for C++
+
+#include <iostream>
+using namespace std;
+
+
+ // } Driver Code Ends
+// User function Template for C++
+
+void utility() {
+
+    // declare the variable count 
+    static int count = 0;
+
+    // increases the value of count by 1
+    count++;
+
+    // print count
+    cout << count;
+}
+
+// { Driver Code Starts.
+
+int main() {
+    int t;
+    cin >> t;
+
+    int n;
+    cin >> n;
+
+    while (n--) {
+
+        utility();
+        cout << " ";
+    }
+
+    return 0;
+}  // } Driver Code Ends
