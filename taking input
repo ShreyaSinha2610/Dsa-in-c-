@@ -1,0 +1,38 @@
+Given an integer, you need to input it. The integer will then be printed after adding 10.
+
+Example 1:
+
+Input:
+myInput = 2
+Output: 
+12
+Explanation: The input is 2, the print
+statement adds 10 to it to make 12.
+
+Solution:
+// { Driver Code Starts
+//Initial Template for C++
+
+#include <bits/stdc++.h>
+using namespace std;
+    
+int main() {
+	
+	
+    int t; cin>>t; 
+        while(t--) {
+            
+            
+ // } Driver Code Ends
+//User function Template for C++
+
+int myInput;
+
+//write statement here
+cin>>myInput;
+
+cout<<myInput+10<<endl;
+
+// { Driver Code Starts.
+        }
+}  // } Driver Code Ends
